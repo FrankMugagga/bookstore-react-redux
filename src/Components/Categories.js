@@ -6,7 +6,9 @@ function Categories() {
 
   return (
     <div>
-      <h3>{check}</h3>
+      <h3>'Under construction'
+        
+      </h3>
       <button type="submit" onClick={alert('click')}>Check</button>
     </div>
   );
