@@ -1,29 +1,33 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
+import { removebook } from '../redux/books/booksSlice';
 
-function BookList({ booksL }) {
+function BookList() {
+  const books = useSelector((store) => store.books.book);
+  const dispatch = useDispatch();
+
   return (
     <ul>
 
       {
-        booksL.map((books) => (
-          <li key={books.id}>
+        books.map((book) => (
+          <li key={book.id}>
             <div className="bookInfo">
 
               <div className="bookDetails">
                 <div className="category">
-                  {books.category}
+                  {book.category}
                 </div>
                 <div className="title">
-                  {books.title}
+                  {book.title}
                 </div>
                 <div className="author">
-                  {books.title}
+                  {book.author}
                 </div>
 
                 <div className="controlBtn">
                   <button className="ctrlBtn" type="submit">Comments</button>
-                  <button className="ctrlBtn btn2" type="submit">Remove</button>
+                  <button className="ctrlBtn btn2" type="submit" onClick={() => dispatch(removebook(book.item_id))}>Remove</button>
                   <button className="ctrlBtn" type="submit">Edit</button>
                 </div>
 
@@ -63,9 +67,5 @@ function BookList({ booksL }) {
     </ul>
   );
 }
-
-BookList.propTypes = {
-  booksL: PropTypes.objectOf(PropTypes.string).isRequired,
-};
 
 export default BookList;
