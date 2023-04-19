@@ -70,7 +70,7 @@ Read a random math-related quote.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [Live Demo Link](https://github.com/FrankMugagga/)
+> [Live Demo Link](WILL BE ADDED AFTER APPROVAL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +143,7 @@ GitHub: [@githubhandle](https://www.github.com/FrankMugagga)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Unit Testing]**
+- **[Remove, delete, edit]**
 - **[API]**
 
 
