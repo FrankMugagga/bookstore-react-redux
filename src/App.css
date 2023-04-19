@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Roboto+Slab:wght@100;300;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Montserrat, serif;
+}
+
+main {
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 5.938rem;
+  padding: 1.43rem 6.188rem 1.688rem 6.25rem;
+  background: #fff;
+  display: flex;
+  border: solid 1px #f5f6fa;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkCont {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0290ff;
+  margin-right: 2.5rem;
+}
+
+nav a {
+  margin-right: 2.5rem;
+}
+
+.linkCont a {
+  color: #121212;
+  font-size: 0.9rem;
+}
+
+.linkCont a:nth-child(odd) {
+  color: #afadad;
+}
+
+.humanCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  border: 2px solid red;
+}
+
+.humanicon {
+  font-size: 2rem;
+  color: #0290ff;
+}
+
+.booksMain {
+  width: 100%;
+  padding: 4.313rem 3.75rem 7.688rem 6.25rem;
+  background: #f5f6fa;
+}
