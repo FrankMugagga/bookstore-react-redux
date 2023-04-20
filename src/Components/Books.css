@@ -130,13 +130,12 @@ h5 {
 form {
   display: flex;
   justify-content: space-between;
-  width: 102rem;
   padding: 2rem  0 1rem;
   border-top: 2px solid #e8e8e8;
 }
 
-#book {
-  width: 60.5rem;
+input {
+  width: 30.5rem;
   height: 2.813rem;
   padding: 0.813rem 0.688rem 0.813rem 1.063rem;
   border-radius: 4px;
