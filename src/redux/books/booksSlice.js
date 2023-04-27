@@ -13,7 +13,6 @@ const initialState = {
 export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
   const resp = await axios.get(url);
   /*eslint-disable */
-  // return [...resp.data]
   const data = resp.data;
   const books = Object.keys(data).map((key) => ({
     ...data[key][0],
@@ -68,6 +67,7 @@ const booksSlice = createSlice({
       });
       builder.addCase(addNewBook.fulfilled, (state, action) => {
         state.status = 'succeeded'
+        console.log(action)
       })
       builder.addCase(addNewBook.rejected, (state, action) => {
         state.status = 'failed'

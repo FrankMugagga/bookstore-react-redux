@@ -11,10 +11,8 @@ function BookList() {
   const error = useSelector(getBooksError);
 
   useEffect(() => {
-    if (booksStatus === 'idle') {
-      dispatch(fetchBooks());
-    }
-  }, []);
+    dispatch(fetchBooks());
+  }, [dispatch]);
 
   if (booksStatus === 'Loading') {
     return (

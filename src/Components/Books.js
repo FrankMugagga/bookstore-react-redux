@@ -4,7 +4,6 @@ import BookList from './BookList';
 import './Books.css';
 
 function Books() {
-
   return (
     <div className="booksMain">
       <BookList />
