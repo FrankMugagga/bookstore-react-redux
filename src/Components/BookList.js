@@ -1,17 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removebook } from '../redux/books/booksSlice';
+import {
+  removeBook, fetchBooks, getBooksStatus, getBooksError,
+} from '../redux/books/booksSlice';
 
 function BookList() {
-  const books = useSelector((store) => store.books.book);
   const dispatch = useDispatch();
+  const book = useSelector((store) => store.books.books);
+  const booksStatus = useSelector(getBooksStatus);
+  const error = useSelector(getBooksError);
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+
+  if (booksStatus === 'Loading') {
+    return (
+      <div>
+        <h1>Loading.....</h1>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div>
+        <h1>There was an error</h1>
+      </div>
+    );
+  }
 
   return (
     <ul>
 
       {
-        books.map((book) => (
-          <li key={book.id}>
+        book.map((book) => (
+          <li key={book.item_id}>
             <div className="bookInfo">
 
               <div className="bookDetails">
@@ -27,7 +51,7 @@ function BookList() {
 
                 <div className="controlBtn">
                   <button className="ctrlBtn" type="submit">Comments</button>
-                  <button className="ctrlBtn btn2" type="submit" onClick={() => dispatch(removebook(book.item_id))}>Remove</button>
+                  <button className="ctrlBtn btn2" type="submit" onClick={() => dispatch(removeBook(book.item_id))}>Remove</button>
                   <button className="ctrlBtn" type="submit">Edit</button>
                 </div>
 
@@ -55,9 +79,9 @@ function BookList() {
               <h5 className="h5h">
                 Chapter 17
               </h5>
-              <buuton className="updatebtn" type="submit">
+              <button className="updatebtn" type="submit">
                 UPDATE PROGRESS
-              </buuton>
+              </button>
             </div>
 
           </li>
