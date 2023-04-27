@@ -9,7 +9,6 @@ function Form() {
   const [category, setCategory] = useState('');
 
   const dispatch = useDispatch();
-  // const addedBook = dispatch(addbook({ title, author, category }));
 
   const handleSubmit = (e) => {
     e.preventDefault();
