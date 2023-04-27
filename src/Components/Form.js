@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addbook } from '../redux/books/booksSlice';
+import { nanoid } from '@reduxjs/toolkit';
+import { addNewBook } from '../redux/books/booksSlice';
 
 function Form() {
   const [title, setTitle] = useState('');
@@ -8,10 +9,14 @@ function Form() {
   const [category, setCategory] = useState('');
 
   const dispatch = useDispatch();
+  // const addedBook = dispatch(addbook({ title, author, category }));
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addbook({ title, author, category }));
+    dispatch(addNewBook({
+      item_id: nanoid(), title, author, category,
+    })).unwrap();
+
     setTitle('');
     setAuthor('');
     setCategory('');
