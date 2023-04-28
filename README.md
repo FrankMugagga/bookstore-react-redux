@@ -43,9 +43,6 @@
 
 > **[Book store CMS]** is a Bookstore App in which book details can be displayed, added, commented on, deleted, edited and remove a selected book
 
-Make simple calculations.
-Read a random math-related quote.
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -59,8 +56,10 @@ Read a random math-related quote.
 
 ### Key Features <a name="key-features"></a>
 
-- **[Styling]**
-**[React Components]**
+- **[Fetchingdata from the Api]**
+- **[dding data from the Api]**
+- **[Removing data from the Api]**
+**[Style the form]**
 
 
 
@@ -70,7 +69,7 @@ Read a random math-related quote.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [Live Demo Link](WILL BE ADDED AFTER APPROVAL)
+> [Live Demo Link](https://bookstore-react-redux-bpjv.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,7 +93,7 @@ Clone this repository to your desired folder:
 - Use the following Commands:
 
       cd bookstore-react
-      https://github.com/FrankMugagga/bookstore-react
+      https://github.com/FrankMugagga/bookstore-react-redux
 
 
 ### Install
@@ -102,7 +101,6 @@ Clone this repository to your desired folder:
 Install this project with:
 
   - npm install
-  - npm run build
 
 
 ### Usage
@@ -143,8 +141,9 @@ GitHub: [@githubhandle](https://www.github.com/FrankMugagga)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Remove, delete, edit]**
-- **[API]**
+- **[Edit]**
+- **[Automatic loading]**
+- **[Updating]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -153,7 +152,7 @@ GitHub: [@githubhandle](https://www.github.com/FrankMugagga)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/FrankMugagga/bookstore-react/issues).
+Feel free to check the [issues page](https://github.com/FrankMugagga/bookstore-react-redux/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
