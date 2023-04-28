@@ -59,7 +59,7 @@
 - **[Fetchingdata from the Api]**
 - **[dding data from the Api]**
 - **[Removing data from the Api]**
-**[Styling the form]**
+**[Style the form]**
 
 
 
